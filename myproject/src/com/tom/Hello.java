@@ -7,10 +7,7 @@ public class Hello {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
-		System.out.println("Please enter an integer.");
-		Scanner scanner = new Scanner(System.in);
-	    int line =  scanner.nextInt();
-		System.out.println(3<=line&&line<=5);
+		
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Your name:");
