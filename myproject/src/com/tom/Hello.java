@@ -6,26 +6,31 @@ import java.util.Scanner;
 public class Hello {
 
 	public static void main(String[] args) {
-		
-		int a =1 ;
-		while(a>0){
-			System.out.println("hahahaha");
-			a = a-1;
+		int i =0;
+		for(i=0;i<3;i++){
+			System.out.println(i);
 		}
+		System.out.println(i);
 		
 		
-		Random random = new Random();
-		int secret = random.nextInt(100)+1;
-		System.out.println(secret);
+//		int a =1 ;
+//		while(a>0){
+//			System.out.println("hahahaha");
+//			a = a-1;
+//		}
 		
 		
-		
-		int m = 5 %  3;
-		System.out.println(m);
-		
-		float n = 15.66189f;
-		System.out.printf("Your age : %.2f" , n);
-		
+//		Random random = new Random();
+//		int secret = random.nextInt(100)+1;
+//		System.out.println(secret);
+//		
+//		
+//		
+//		int m = 5 %  3;
+//		System.out.println(m);
+//		
+//		float n = 15.66189f;
+//		System.out.printf("Your age : %.2f" , n);
 	
 		
 		
