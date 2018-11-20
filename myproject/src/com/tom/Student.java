@@ -15,10 +15,35 @@ public class Student {
 	public void print(){
 		System.out.print(name + "\t" + english + "\t" + math + "\t" + highest() + "\t" + getAverage() +"\t");
 		if(getAverage() > 60){
-			System.out.println("Pass");
+			System.out.print("Pass");
 		}else{
-			System.out.println("Failed");
+			System.out.print("Failed");
 		}
+		System.out.println("\t" + getGrading());
+	}
+	
+	public char getGrading(){
+		char grading = 'F';
+		int average = getAverage();
+		switch(average/10){
+		case 10:
+		case 9:
+			grading = 'A';
+			break;
+		case 8:
+			grading = 'B';
+			break;
+		case 7 :
+			grading = 'C';
+			break;
+		case 6:
+			grading = 'D';
+			break;
+		default:
+			grading = 'F';
+		
+		}
+		return grading;
 	}
 	
 	public int highest(){
