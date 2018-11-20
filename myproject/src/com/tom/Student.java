@@ -13,7 +13,24 @@ public class Student {
 	}
 	
 	public void print(){
-		System.out.println(name + "\t" + english + "\t" + math + "\t" + (english + math)/2);
+		System.out.print(name + "\t" + english + "\t" + math + "\t" + highest() + "\t" + getAverage() +"\t");
+		if(getAverage() > 60){
+			System.out.println("Pass");
+		}else{
+			System.out.println("Failed");
+		}
+	}
+	
+	public int highest(){
+		if(english < math){
+			return english;
+		}else{
+			return math;
+		}
+	}
+	
+	public int getAverage(){
+		return (english + math)/2;
 	}
 
 	
