@@ -19,7 +19,8 @@ public class Student {
 		}else{
 			System.out.print("Failed");
 		}
-		System.out.println("\t" + getGrading());
+		System.out.print("\t" + getGrading() + "\t");
+		System.out.print((getAverage() <  60) ? "Failed": "Pass");
 	}
 	
 	public char getGrading(){
